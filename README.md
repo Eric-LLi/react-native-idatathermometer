@@ -8,6 +8,33 @@
 
 `$ react-native link react-native-idata-thermometer`
 
+### MainActivity.java
+    import com.idatathermometer.IdataThermometerModule;
+
+    @Override  // <--- Add this method if you want to react to keyDown
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		if (event.getRepeatCount() == 0) {
+            IdataThermometerModule instance = IdataThermometerModule.getInstance();
+			if (instance != null) {
+				instance.onKeyDownEvent(keyCode, event);
+			}
+		}
+		super.onKeyDown(keyCode, event);
+		return true;
+	}
+
+	@Override  // <--- Add this method if you want to react to keyUp
+	public boolean onKeyUp(int keyCode, KeyEvent event) {
+		if (event.getRepeatCount() == 0) {
+            IdataThermometerModule instance = IdataThermometerModule.getInstance();
+			if (instance != null) {
+				instance.onKeyUpEvent(keyCode, event);
+			}
+		}
+		super.onKeyUp(keyCode, event);
+		return true;
+	}
+
 ## Usage
 ```javascript
 import IdataThermometer, {iDataEvents} from 'react-native-idata-thermometer';
