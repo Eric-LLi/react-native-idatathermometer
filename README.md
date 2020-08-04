@@ -75,6 +75,6 @@ IdataThermometer.init();
 //Disconnect
 IdataThermometer.disconnect();
 
-// TODO: What to do with the module?
-IdataThermometer;
+//Read temp
+IdataThermometer.readTemp();
 ```
