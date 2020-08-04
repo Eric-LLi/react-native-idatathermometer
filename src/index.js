@@ -2,11 +2,10 @@ import { NativeModules } from 'react-native';
 
 const { IdataThermometer } = NativeModules;
 
-
 export const iDataEvents = {
 	KEY_EVENTS: 'keyevents',
-    TEMPERATURE_EVENTS: 'temperatureevents'
-    STATUS_EVENTS: 'statusevents'
+	TEMPERATURE_EVENTS: 'temperatureevents',
+	STATUS_EVENTS: 'statusevents',
 };
 
 const events = {};
