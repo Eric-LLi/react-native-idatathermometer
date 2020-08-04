@@ -122,8 +122,25 @@ public class IdataThermometerModule extends ReactContextBaseJavaModule implement
 	}
 
 	@ReactMethod
+	public void disconnect() {
+		try {
+			if (mIMeasureSDK != null) {
+				mIMeasureSDK.close();
+				mIMeasureSDK = null;
+			}
+		} catch (Exception ex) {
+			WritableMap map = Arguments.createMap();
+			map.putBoolean("status", false);
+			map.putString("error", ex.getMessage());
+			sendEvent(STATUS_EVENTS, map);
+		}
+	}
+
+	@ReactMethod
 	public void readTemp() {
 		if (mIMeasureSDK != null && !is_reading) {
+			is_reading = true;
+			
 			mIMeasureSDK.read(new IMeasureSDK.TemperatureCallback() {
 				@Override
 				public void success(final double temp) {
