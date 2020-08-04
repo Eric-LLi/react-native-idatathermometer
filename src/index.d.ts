@@ -1,4 +1,5 @@
 export declare function init(): void;
+export declare function disconnect(): void;
 
 export declare function on(
 	event: iDataEvents,
