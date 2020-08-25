@@ -2,11 +2,11 @@
 
 ## Getting started
 
-`$ npm install react-native-idata-thermometer --save`
+`$ npm install @infiniteesoftware/react-native-idata-thermometer --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-idata-thermometer`
+`$ react-native link @infiniteesoftware/react-native-idata-thermometer`
 
 ### MainActivity.java
     import com.idatathermometer.IdataThermometerModule;
