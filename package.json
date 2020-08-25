@@ -1,8 +1,8 @@
 {
   "name": "@infiniteesoftware/react-native-idata-thermometer",
   "title": "React Native Idata Thermometer",
-  "version": "1.0.0",
-  "description": "TODO",
+  "version": "1.0.1",
+  "description": "React Native iData thermometer",
   "main": "./src/index.js",
   "files": [
     "src",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Eric-LLi/react-native-idata-thermometer.git",
+    "url": "git+https://github.com/Eric-LLi/react-native-idatathermometer.git",
     "baseUrl": "https://github.com/Eric-LLi/react-native-idatathermometer"
   },
   "keywords": [
