@@ -1,5 +1,5 @@
 {
-  "name": "react-native-idata-thermometer",
+  "name": "@infiniteesoftware/react-native-idata-thermometer",
   "title": "React Native Idata Thermometer",
   "version": "1.0.0",
   "description": "TODO",
@@ -27,7 +27,6 @@
   },
   "license": "MIT",
   "licenseFilename": "LICENSE",
-  "readmeFilename": "README.md",
   "peerDependencies": {
     "react": "^16.8.1",
     "react-native": ">=0.60.0-rc.0 <1.0.x"
@@ -35,5 +34,9 @@
   "devDependencies": {
     "react": "^16.9.0",
     "react-native": "^0.61.5"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/github_account/react-native-idata-thermometer/issues"
+  },
+  "homepage": "https://github.com/github_account/react-native-idata-thermometer#readme"
 }
